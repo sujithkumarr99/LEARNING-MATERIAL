@@ -1,5 +1,113 @@
-GITHUB
+1.	Basic Git Setup
+# Set your username
+git config --global user.name "Sujith"
 
-OPEN FOLDER IN GIT BASH
+# Set your email
+git config --global user.email "youremail@example.com"
 
-INITIALIZE GIT $git initgitgi
+# Check configuration
+git config –list
+
+
+2.	Create and Initialize Repository
+
+# Initialize a new Git repository in current folder
+git init
+
+# Clone a remote repository to your local system
+git clone https://github.com/username/repository.git
+
+3.	Staging and Committing Changes
+
+# Check file status (modified, staged, untracked)
+git status
+
+# Add a single file to staging area
+git add filename.html
+
+# Add all files (new + modified)
+git add .
+
+# Commit the staged files with a message
+git commit -m "Added index page"
+
+# Add and commit in one line
+git commit -am "Updated file"
+
+
+
+
+
+4.	Viewing History
+
+# Show commit history
+git log
+
+# Show simplified commit history (one line)
+git log --oneline
+
+# Show differences between working directory and last commit
+git diff
+
+# Show changes between two commits
+git diff commit1 commit2
+
+
+5.	Working with Branches
+
+# List all branches
+git branch
+
+# Create a new branch
+git branch feature-branch
+
+# Switch to another branch
+git checkout feature-branch
+
+# Create and switch at once
+git checkout -b new-branch
+
+# Merge a branch into current branch
+git merge feature-branch
+
+# Delete a branch
+git branch -d feature-branch
+
+
+
+
+
+
+
+6.	Remote Repository (GitHub)
+
+# Add a remote repository (GitHub)
+git remote add origin https://github.com/username/repository.git
+
+# Check remote URLs
+git remote -v
+
+# Push branch to remote
+git push -u origin main
+
+# Push changes
+git push
+
+# Pull latest changes from remote
+git pull origin main
+
+# Fetch data from remote (no merge)
+git fetch origin
+
+
+7.	Syncing Local & Remote
+# Push all branches
+git push --all origin
+
+# Force push (⚠️ overwrites remote)
+git push origin main --force
+
+# Pull with rebase (avoid unnecessary merge commits)
+git pull --rebase origin main
+
+
