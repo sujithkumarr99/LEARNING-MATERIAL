@@ -1,0 +1,5 @@
+GITHUB
+
+OPEN FOLDER IN GIT BASH
+
+INITIALIZE GIT $git initgitgi
