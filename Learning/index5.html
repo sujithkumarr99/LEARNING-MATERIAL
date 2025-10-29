@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujju</title>
+  
+</head>
+
+<body>
+
+<p>enter number</p>
+    <input type="text" id="sujith">
+    <button type="button" onclick="checkSum()">Submit</button>
+    <p id="demo"></p>
+
+<form action="" >
+    <input type="text" id="something" placeholder="Enter SomeText">
+    <button type="submit" onclick="functionSum()">submit</button>
+    <p id="dm"></p>
+    
+</form>
+<script>
+    function checkSum(){
+        let x = document.getElementById("sujith").value;
+        let text;
+
+        if(isNaN(x) || x < 1 || x > 10){
+            text = "Not Valid";
+        }
+        else{
+
+            text = "Valid"; 
+        }
+        document.getElementById("demo").innerHTML= text;
+    }
+
+    function functionSum(){
+        let xy = document.getElementById("something").value;
+        let tx;
+        if( xy==""){
+            alert("You Must Enter Sometext")
+        }
+        
+    }
+
+</script>
+
+
+</body>
+
+</html>
